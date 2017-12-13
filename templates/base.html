@@ -1,0 +1,30 @@
+{% load rbac %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/rbac/rbac.css">
+</head>
+<body>
+<div style="float: left;width: 20%;height: 500px;background-color: #bbbbbb">
+{#引入自定义的标签#}
+{% menu request %}
+
+
+</div>
+
+
+<div style="float: left;width: 80%;height: 500px">
+    {% block content %}
+
+    {% endblock %}
+
+</div>
+
+    <script src="/static/jquery3.2.1.js"></script>
+    <script src="/static/rbac/rbac.js"></script>
+</body>
+</html>

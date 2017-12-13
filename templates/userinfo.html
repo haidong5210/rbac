@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    <a href="/userinfo/add">添加</a>
+ {% for user in dict %}
+        <p>{{ user.id }}----{{ user.name }}</p>
+    {% endfor %}
+{% endblock %}
